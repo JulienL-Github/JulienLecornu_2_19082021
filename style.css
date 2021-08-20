@@ -13,11 +13,12 @@ h1 {
     font-weight : 700;
     font-size: 1.45em;
     margin-bottom: 8px ;
+    margin-top: 0px;
 }
 
-
-p {
-    margin-top: 8px ;
+h2 {
+    margin: 0px;
+    padding: 0px
 }
 
 /*Where we define the width of the website*/
@@ -64,6 +65,10 @@ header {
 
 
 /*-- Section 1 Search A City */
+
+.sectionSearchCity p {
+    margin-top: 8px ;
+}
 
 .searchBar  {
     width: 100%;
@@ -122,3 +127,170 @@ input:focus {
     border-bottom: solid #f2f2f2 1px;
     border-left: none;
 }
+
+.searchBar button:hover{
+    cursor:pointer;
+}
+
+/*-- Section 2 Results */
+
+    /* Filter */
+    .filter {
+        display: flex;
+        align-items: center;
+        margin-top : 16px;
+    }
+
+    .filter h2 {
+        margin-right: 10px;
+        font-size: 1.25em;
+    }
+
+    .filterButton { 
+        display: flex;
+        align-items:center;
+        margin-left: 24px;
+    }
+
+
+    .filterButton i {
+        z-index: 0;
+        position: absolute;
+        margin-left: 2px;
+        margin-right: 2px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #DEEBFF;
+        color: #0065FC;
+    }
+
+    .filterButton p {
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        font-size: 1,35em;
+        font-weight: 700;
+        height: 50px;
+        padding-left: 63px;
+        padding-right: 25px;
+        border-radius: 50px 50px 50px 50px;
+        border-top : solid #f2f2f2 2px;
+        border-right : solid #f2f2f2 2px;
+        border-bottom : solid #f2f2f2 2px;
+        border-left : solid #f2f2f2 2px;
+        background: rgba(0, 0, 0, 0);
+        transition-duration: 0.3s
+
+    }
+
+    .filterButton p:hover {
+        cursor:pointer;
+        border-top : solid #0065FC 2px;
+        border-right : solid #0065FC 2px;
+        border-bottom : solid #0065FC 2px;
+        border-left : solid #0065FC 2px;
+        background: rgba(0, 101, 252,.04);
+    }
+
+    /* showResultNb */
+
+    .showResultNb {
+        display: flex;
+        align-items:center;
+        margin-top : 17px;
+    }
+
+    .showResultNb i{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border:solid #f2f2f2 1px;
+        color: #0065FC;
+    }
+
+    .showResultNb p{
+        margin-left: 12px;
+    }
+
+    /* accommodations */
+    
+    .accommodations {
+        display: flex;    
+    }
+    .accommodationsBox {
+        background-color: #f2f2f2;
+        border-radius: 25px;
+        padding: 47px 40px 46px 40px ;
+    }
+
+    .accommodationsBox:nth-of-type(1){
+        flex: 7;
+        margin-right: 20px;
+    }
+
+    .accommodationsBox:nth-of-type(2) {
+        flex: 3;
+    }
+
+    .accommodationPopular {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Cards */
+    .horizontalCards {
+        width: 235px;
+        background-color: white;
+        border-radius: 10%;
+        border: solid white 5px;
+        box-shadow: 0px 5px 10px rgb(187, 186, 186);
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-bottom: 11px;
+    }
+
+    .horizontalCards img {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 114px;
+        object-fit: cover;
+    }
+
+    .horizontalCards .text {
+        border-radius: 25px 25px 0px 0px;
+        width: 235px;
+        padding: 0px 8px 0px 8px;
+        margin-top: 12px;
+    }
+
+    /* Accommodation Available */
+    .accommodationAvailable {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;    
+        margin-bottom: 28px;  
+    }
+
+    .accommodationAvailable h2 {
+        font-size: 1em;
+    }
+
+    .accommodationsBox a {
+        color: black;
+        font: 1em;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .accommodationsBox a:hover {
+        color: #0065FC;
+        text-decoration:underline;
+    }
