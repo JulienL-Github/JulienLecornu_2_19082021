@@ -1,6 +1,7 @@
 /* CSS of RESERVIA Page */
 
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
     font-family: 'Raleway', sans-serif;
@@ -8,32 +9,38 @@ body {
 
 }
 
+h1 {
+    font-weight : 700;
+    font-size: 1.45em;
+    margin-bottom: 8px ;
+}
+
+
+p {
+    margin-top: 8px ;
+}
+
 /*Where we define the width of the website*/
 .widthSite {
     width: 1340px;
-    padding : 0 54px 0 54px;
-}
-/*----------*/
-
-h1 {
-    font-weight : 900;
-    font-size: 1.45em;
+    padding : 0 50px 0 50px;
 }
 
+
+/* Header */
 
 header {
-    padding : 52px 0px 52px 0px;
     width: 100%;
     display : flex;
     justify-content: space-between;
     align-items: center;
-
-
+    margin-top: 39px;
 }
 
-/* Navigation Bar*/
+/* Header - Navigation Bar*/
 
 .navBar li {
+    margin-right: 29px;
     display : flex;
     font-size: 1em;
 }
@@ -54,19 +61,16 @@ header {
     font-weight: bold;
     color: #0065FC;
 }
-/*----------*/
 
-/* Search Section */
+
+/*-- Section 1 Search A City */
 
 .searchBar  {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
-
-p {
-    font-size: 1em
+    margin-top: 20px ;
 }
 
 .locationIcon {
@@ -87,6 +91,7 @@ input{
     height: 50px;
     width: 234px;
     font-size: 1em;
+    font-weight: 700;
     padding: 0px 0px 0px 17px;
     border-top: solid #f2f2f2 1px;
     border-right: none;
@@ -94,15 +99,24 @@ input{
     border-left: none;
 }
 
+input::placeholder {
+    font-size : medium;
+    font-weight: 400;
+  }
+
+input:focus {
+    outline: none;
+}
+
 .searchBar button{
     background-color: #0065FC;
-    height: 50px;
-    width: 134px;
+    height: 52px;
+    width: 136px;
     /*Text inside button*/
         color: white;
-        font-size: .75em;
-        font-weight: 500;
-    border-radius: 0 10px 10px 0px;
+        font-size: 1em;
+        font-weight: 800;
+    border-radius: 0 20px 20px 0px;
     border-top: solid #f2f2f2 1px;
     border-right: solid #f2f2f2 1px;
     border-bottom: solid #f2f2f2 1px;
