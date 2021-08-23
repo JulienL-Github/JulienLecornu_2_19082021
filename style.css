@@ -3,6 +3,8 @@
 body {
     margin: 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
@@ -30,6 +32,30 @@ i {
     display: block;
 }
 
+li {
+    list-style : none;
+
+}
+
+ul {
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
 /*Where we define the width of the website*/
 .widthSite {
     width: 1340px;
@@ -50,18 +76,13 @@ header {
     /* Header - Navigation Bar*/
 
     .navBar li {
-        margin-right: 29px;
         display : flex;
+        justify-content: flex-end;
         font-size: 1em;
     }
 
-        .navBar ul {
-        margin-top: 0px;
-        }
-
-    .navBar a{
-        text-decoration: none;
-        color: black;
+    .navBar ul {
+    margin-top: 0px;
     }
 
     .navBar a:active{
@@ -394,52 +415,86 @@ input:focus {
             margin-top : 41px;
         }
 
+/* Activities */
+
+    #activities {
+        margin-top: 61px;
+    }
+
+    .activitiesBox {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .activitiesBox .cards{
+        width: 302px;
+        border:none;
+        margin: 0;
+    }
+
+    .activitiesBox h2{
+        margin: 23px 20px 20px 20px;
+        font-size: 1em;
+    }
+
+    .activitiesBox .column1 .cards img {
+        height: 390px;
+    }
+
+    .activitiesBox .column2, .column4  {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .activitiesBox .column2 .cards .img1{
+        height:180px;
+    }
+
+    .activitiesBox .column2 .cards .img2{
+        height:108px;
+    }
+
+    .activitiesBox .column4 .cards .img3{
+        height:140px;
+    }
+
+    .activitiesBox .column4 .cards .img4{
+        height:153px;
+    }
 
 
-        #activities {
-            margin-top: 61px;
-        }
+/* footer */
 
-        .activitiesBox {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            margin-top: 20px;
-        }
+    footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #f2f2f2;
+        margin-top: 60px;
+        Padding : 50px 0px 50px 0px;
+    }
 
-        .activitiesBox .cards{
-            width: 302px;
-            border:none;
-            margin: 0;
-        }
+    footer .widthSite {
+        display: flex;
+        justify-content: flex-start;
+    }
 
-        .activitiesBox h2{
-            margin: 23px 20px 20px 20px;
-            font-size: 1em;
-        }
+    #footerColumn {
+        margin-right: 228px;
+    }
 
-        .activitiesBox .column1 .cards img {
-            height: 390px;
-        }
+    #footerColumn h2{
+        font-size: 1em;
+    }
 
-        .activitiesBox .column2, .column4  {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+    #footerColumn ul{
+        margin-top: 23px;
+    }
 
-        .activitiesBox .column2 .cards .img1{
-            height:180px;
-        }
-
-        .activitiesBox .column2 .cards .img2{
-            height:108px;
-        }
-
-        .activitiesBox .column4 .cards .img3{
-            height:140px;
-        }
-
-        .activitiesBox .column4 .cards .img4{
-            height:153px;
-        }
+    #footerColumn li{
+        margin-top: 15px;
+        font-size: 0.9em;
+    }
