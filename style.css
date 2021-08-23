@@ -61,7 +61,6 @@ a:active {
 /*Where we define the width of the website*/
 .widthSite {
     width: 1340px;
-    padding : 0 50px 0 50px;
     display: flex;
     flex-direction: column;
 }
@@ -86,17 +85,17 @@ header {
 }
     /* Header - Navigation Bar*/
 
-    #navBar {
+    nav li {
         display: flex;
         margin-top: 50px;
     }
 
-    #navBar a {
+    nav a {
         margin-left: 12px;
         padding : 48px 28px 0px 28px
     }
 
-    #navBar a:hover {
+    nav a:hover {
         border-top : solid #0065FC 2px;
     }
 
@@ -168,6 +167,13 @@ input:focus {
     border-bottom: solid #f2f2f2 1px;
     border-left: none;
 }
+
+    span.icon {
+        display:none
+    }
+    span.text {
+        display:inline-block
+    }
 
 .searchBar button:hover{
     cursor:pointer;
@@ -498,3 +504,110 @@ input:focus {
         margin-top: 15px;
         font-size: 0.9em;
     }
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 576px) {
+
+
+    .widthSite {
+        width:100%;
+        }
+
+    header, #sectionSearchCity, #results, #activities, footer {
+        padding: 0 10% 0 10%;
+    }
+
+    #sectionSearchCity p {
+        margin-top: 16px;
+    }
+
+    .locationIcon i{
+        width: 49px;
+        height: 49px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .searchBar {
+        justify-content: center;
+    }
+
+    .searchBar form {
+        width: 230px;
+    }
+
+    .searchBar button {
+        width: 51px;
+        height: 51px;
+        border-radius: 15px;
+    }
+        span.texte {
+            display:none;
+        }
+        span.icon {
+            display:inline-block;
+        }
+
+
+        /* RESULT */
+        
+        .filter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .filter h2 {
+            width: 100%;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+
+        .filter p {
+            margin: 7px 0 6px 0;
+            font-size: .93em;
+        }
+
+        .filterButton {
+            margin:0;
+        }
+
+
+        .showResultNb {
+            align-items: baseline;
+        }
+
+        .accommodations {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .accommodationsBox {
+            border-radius: 0px;
+        }
+
+        .accommodationsBox:nth-of-type(1){
+            background-color: #ffff;
+        }
+
+        .accommodationPopular {
+            justify-content: center;
+        }
+
+        .accommodationPopular .cards {
+            width: 323px;
+        }
+
+        .accommodationAvailable {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+        }
+
+        .accommodationAvailable .cards {
+            width: 323px;
+        }
+}

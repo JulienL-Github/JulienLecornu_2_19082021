@@ -24,11 +24,13 @@
         <div class="logo">
             <a href="#top"><img src="images/Reservia.svg"/></a> 
         </div>
+        <nav>
             <li id="navBar">
                 <ul><a href="#results">Hébergements</a></ul>
                 <ul><a href="#activities">Activités</a></ul>
                 <ul class="subscribeLink"><a href="#">S'inscrire</a></ul>
             </li>
+        </nav>
     </header>
 
 <!-- Section 1 Search A City -->
@@ -43,7 +45,10 @@
                 <input class="champ" type="text" placeholder="Tapez le nom d'une ville" autofocus/>
             </form>
             <div class="button">
-                <button type="submit">Rechercher</button>
+                <button type="submit">
+                    <span class="texte">Rechercher</span>
+                    <span class="icon"><i class="fas fa-search"></i></span>
+                </button>
             </div>
         </div> 
     </section>
@@ -58,7 +63,7 @@
             </div>
             <div class="filterButton">
                 <i class="fas fa-solid fa-child"></i>
-                <p>Familiale</p>
+                <p>Familial</p>
             </div>
             <div class="filterButton">
                 <i class="fas fa-solid fa-heart"></i>
