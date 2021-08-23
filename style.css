@@ -91,12 +91,17 @@ header {
     }
 
     #navBar a {
-        margin-left: 40px;
+        margin-left: 12px;
         padding : 48px 28px 0px 28px
     }
 
-    #navBar a:active {
+    #navBar a:hover {
         border-top : solid #0065FC 2px;
+    }
+
+    .subscribeLink a {
+        color:#0065FC;
+        font-weight: 700;
     }
 
 /*-- Section 1 Search A City */
