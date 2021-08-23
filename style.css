@@ -82,6 +82,7 @@ header {
     /* Header - Logo*/
 .logo {
     display: flex;
+    align-items: center;
 }
     /* Header - Navigation Bar*/
 
