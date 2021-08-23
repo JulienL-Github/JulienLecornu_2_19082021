@@ -39,11 +39,7 @@ li {
 
 ul {
     padding: 0;
-}
-
-a{
-    text-decoration: none;
-    color: black;
+    margin: 0;
 }
 
 a{
@@ -56,52 +52,56 @@ a:hover{
     color: black;
 }
 
+a:active {
+    text-decoration: none;
+    color: #0065FC;
+}
+
+
 /*Where we define the width of the website*/
 .widthSite {
     width: 1340px;
     padding : 0 50px 0 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 
 /* Header */
 
 header {
-    display : flex;
-    width: 100%;
+    z-index: 2;
+    position: fixed;
+    display: flex;
     justify-content: space-between;
-    align-items:flex-start;
-    padding-top: 42px;
+    background-color: #ffff;
+    height: 130px;
+    width: 1340px;
 }
 
+    /* Header - Logo*/
+.logo {
+    display: flex;
+}
     /* Header - Navigation Bar*/
 
-    .navBar li {
-        display : flex;
-        justify-content: flex-end;
-        font-size: 1em;
+    #navBar {
+        display: flex;
+        margin-top: 50px;
     }
 
-    .navBar ul {
-    margin-top: 0px;
+    #navBar a {
+        margin-left: 40px;
+        padding : 48px 28px 0px 28px
     }
 
-    .navBar a:active{
-        outline: none;
-        text-decoration: none;
-        color: #0065FC;
-
+    #navBar a:active {
+        border-top : solid #0065FC 2px;
     }
-
-    .subscribeLink a{
-        font-weight: bold;
-        color: #0065FC;
-}
-
 
 /*-- Section 1 Search A City */
-
 #sectionSearchCity {
-    margin-top: 32px ;
+    margin-top: 130px;
 }
 
 #sectionSearchCity p {
@@ -124,10 +124,8 @@ header {
     height: 50px;
     width: 52px;
     border-radius: 10px 0px 0px 10px;
-    border-top: solid #f2f2f2 1px;
+    border: solid #f2f2f2 1px;
     border-right: none;
-    border-bottom: solid #f2f2f2 1px;
-    border-left: solid #f2f2f2 1px; 
     }
 
 input{
@@ -136,9 +134,8 @@ input{
     font-size: 1em;
     font-weight: 700;
     padding: 0px 0px 0px 17px;
-    border-top: solid #f2f2f2 1px;
+    border: solid #f2f2f2 1px;
     border-right: none;
-    border-bottom: solid #f2f2f2 1px;
     border-left: none;
 }
 
@@ -217,13 +214,9 @@ input:focus {
         font-size: 1,35em;
         font-weight: 700;
         height: 50px;
-        padding-left: 63px;
-        padding-right: 25px;
-        border-radius: 50px 50px 50px 50px;
-        border-top : solid #f2f2f2 2px;
-        border-right : solid #f2f2f2 2px;
-        border-bottom : solid #f2f2f2 2px;
-        border-left : solid #f2f2f2 2px;
+        padding: 0px 25px 0px 63px;
+        border-radius: 50px;
+        border : solid #f2f2f2 2px;
         background: rgba(0, 0, 0, 0);
         transition-duration: 0.3s
 
@@ -479,6 +472,7 @@ input:focus {
 
     footer .widthSite {
         display: flex;
+        flex-direction: row;
         justify-content: flex-start;
     }
 
