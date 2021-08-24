@@ -8,7 +8,6 @@ body {
     justify-content: center;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
-
 }
 
 h1 {
@@ -59,36 +58,42 @@ a:active {
 
 
 /*Where we define the width of the website*/
-.widthSite {
-    width: 1340px;
-    display: flex;
-    flex-direction: column;
+.siteWidth {
+    width: 93%;
+    max-width: 1340px;
 }
 
+/*header*/
 
-/* Header */
-
-header {
-    z-index: 2;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    background-color: #ffff;
-    height: 130px;
-    width: 1340px;
-}
-
-    /* Header - Logo*/
-.logo {
-    display: flex;
-    align-items: center;
-}
-    /* Header - Navigation Bar*/
-
-    nav li {
+    header {
+        z-index: 99;
+        background-color: white;
         display: flex;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        top:0px;
+    }
+
+    .headerContent {
+        display: flex;
+        justify-content: space-between;
+        height: 130px;
+    }
+
+    /*official logo*/
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    /*navigation bar*/
+    nav ul {
+        display: flex;
+        justify-content: space-between;
         margin-top: 50px;
     }
+
 
     nav a {
         margin-left: 12px;
@@ -105,79 +110,82 @@ header {
     }
 
 /*-- Section 1 Search A City */
-#sectionSearchCity {
-    margin-top: 130px;
-}
 
-#sectionSearchCity p {
-    margin-top: 8px ;
-}
-
-.searchBar  {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 20px ;
-}
-
-.locationIcon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f2f2f2;
-    height: 50px;
-    width: 52px;
-    border-radius: 10px 0px 0px 10px;
-    border: solid #f2f2f2 1px;
-    border-right: none;
+    #section1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 130px;
     }
 
-input{
-    height: 50px;
-    width: 234px;
-    font-size: 1em;
-    font-weight: 700;
-    padding: 0px 0px 0px 17px;
-    border: solid #f2f2f2 1px;
-    border-right: none;
-    border-left: none;
-}
+    #section1 p {
+        margin-top: 8px ;
+    }
 
-input::placeholder {
-    font-size : medium;
-    font-weight: 400;
-  }
+    .searchBar  {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px ;
+    }
 
-input:focus {
-    outline: none;
-}
+    .locationIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f2f2f2;
+        height: 50px;
+        width: 52px;
+        border-radius: 10px 0px 0px 10px;
+        border: solid #f2f2f2 1px;
+        border-right: none;
+        }
 
-.searchBar button{
-    background-color: #0065FC;
-    height: 52px;
-    width: 136px;
-    /*Text inside button*/
-        color: white;
+    input{
+        height: 50px;
+        width: 234px;
         font-size: 1em;
-        font-weight: 800;
-    border-radius: 0 20px 20px 0px;
-    border-top: solid #f2f2f2 1px;
-    border-right: solid #f2f2f2 1px;
-    border-bottom: solid #f2f2f2 1px;
-    border-left: none;
-}
-
-    span.icon {
-        display:none
-    }
-    span.text {
-        display:inline-block
+        font-weight: 700;
+        padding: 0px 0px 0px 17px;
+        border: solid #f2f2f2 1px;
+        border-right: none;
+        border-left: none;
     }
 
-.searchBar button:hover{
-    cursor:pointer;
-}
+    input::placeholder {
+        font-size : medium;
+        font-weight: 400;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    .searchBar button{
+        background-color: #0065FC;
+        height: 52px;
+        width: 136px;
+        /*Text inside button*/
+            color: white;
+            font-size: 1em;
+            font-weight: 800;
+        border-radius: 0 20px 20px 0px;
+        border-top: solid #f2f2f2 1px;
+        border-right: solid #f2f2f2 1px;
+        border-bottom: solid #f2f2f2 1px;
+        border-left: none;
+    }
+
+        span.icon {
+            display:none
+        }
+        span.text {
+            display:inline-block
+        }
+
+    .searchBar button:hover{
+        cursor:pointer;
+    }
 
 /*-- Section 2 Results */
 
