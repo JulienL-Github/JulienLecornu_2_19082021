@@ -321,7 +321,7 @@ a:active {
         }
 
         .cards h2 {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-top: 10px;
         }
 
@@ -655,9 +655,23 @@ a:active {
             justify-content: center;
         }
 
-        .accommodationPopular .cards {
-            width: 323px;
+        .accommodationPopularTitle {
+            margin-bottom: 13px;
         }
+
+        .accommodationPopular .cards {
+            width: 333px;
+        }
+
+        .accommodationPopular .cards img{
+            width: 126px;
+            height: 133PX;
+        }
+
+        .accommodationPopular .cards .text {
+            margin-left: 22px;
+        }
+
 
         .accommodationAvailable {
             display: flex;
@@ -686,7 +700,7 @@ a:active {
         }
 
         .activitiesCards img{
-            height: 192px;
+            height: 135px;
         }
     }
 
