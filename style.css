@@ -1,4 +1,12 @@
-/* CSS of RESERVIA Page */
+/* WEB CSS of RESERVIA Page */
+
+    .web {
+        display : block;
+    }
+
+    .mobile {
+        display: none;
+    }
 
 body {
     margin: 0;
@@ -8,6 +16,7 @@ body {
     justify-content: center;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
+    width: 100%;
 }
 
 h1 {
@@ -47,8 +56,8 @@ a{
 }
 
 a:hover{
-    text-decoration: underline;
-    color: black;
+    text-decoration: none;
+    color: #0065FC;
 }
 
 a:active {
@@ -63,22 +72,25 @@ a:active {
     max-width: 1340px;
 }
 
-/*header*/
+/*HEADER WEB*/
 
-    header {
-        z-index: 99;
-        background-color: white;
+    header.web {
+        background-color: #ffff;
+        width: 100%;
         display: flex;
         justify-content: center;
         position: fixed;
-        width: 100%;
-        top:0px;
+        top : 0;
+        height: 130px;
+
     }
 
-    .headerContent {
+    .webHeader {
+        width: 93%;
+        max-width: 1340px;
         display: flex;
         justify-content: space-between;
-        height: 130px;
+        align-items: inherit; 
     }
 
     /*official logo*/
@@ -88,19 +100,19 @@ a:active {
     }
 
     /*navigation bar*/
-    nav ul {
+    nav.web ul {
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
     }
 
 
-    nav a {
+    nav.web a {
         margin-left: 12px;
         padding : 48px 28px 0px 28px
     }
 
-    nav a:hover {
+    nav.web a:hover {
         border-top : solid #0065FC 2px;
     }
 
@@ -501,20 +513,76 @@ a:active {
         font-size: 0.9em;
     }
 
-/* RESPONSIVE DESIGN */
+/* MOBILE CSS of RESERVIA Page */
 
 @media screen and (max-width: 576px) {
 
+    .web {
+        display: none;
+    }
 
+    .mobile {
+        display: block;
+    }
+
+    
     .widthSite {
         width:100%;
         }
 
     header, #section1, #section2, #section3, footer {
         padding: 0 10% 0 10%;
+        }
+
+    header.mobile {
+        background-color: #ffff;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top : 0;
+        height: 132px;
     }
 
-    #sectionSearchCity p {
+    .mobileHeader {
+        width: 93%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height : 100%
+    }
+
+    nav.mobile {
+        width: 100%;
+        height: 45px;
+    }
+
+    nav.mobile ul {
+        display: flex;
+        justify-content: space-evenly;
+        height: 45px;
+
+    }
+
+
+    nav.mobile li {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        border-bottom: solid #f2f2f2 3px;
+
+    }
+
+    nav.mobile li:hover {
+        border-bottom: solid #0065FC 3px;
+    }
+
+    #section1 {
+        margin-top: 163px;
+    }
+
+    #section1 p {
         margin-top: 16px;
     }
 
