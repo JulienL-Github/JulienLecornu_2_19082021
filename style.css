@@ -531,10 +531,9 @@ a:active {
         display: block;
     }
 
-    
-    .widthSite {
+    .siteWidth {
         width:100%;
-        }
+    }
 
     header, #section1, #section2, #section3, .footerContainer {
         padding: 0 10% 0 10%;
@@ -646,16 +645,21 @@ a:active {
         }
 
         .accommodationsBox {
+            display : flex;
+            flex-direction: column;
+            justify-content: center;
             border-radius: 0px;
             background-color: #f2f2f2;
-            
+            padding: 42px 10% 46px 10%;
         }
 
         .accommodationsBox:nth-of-type(1){
             background-color: #ffff;
+            margin-right: 0px;
         }
 
         .accommodationPopular {
+            display: block;
             justify-content: center;
         }
 
@@ -664,7 +668,7 @@ a:active {
         }
 
         .accommodationPopular .cards {
-            width: 333px;
+            width: 100%;
         }
 
         .accommodationPopular .cards img{
@@ -714,6 +718,14 @@ a:active {
 
         #footerColumn {
             margin : 0px;
+        }
+
+        #accommodationAvailable {
+            display: block;   
+        }
+
+        #accommodationAvailable .cards{
+            width: 100%;   
         }
     }
 
