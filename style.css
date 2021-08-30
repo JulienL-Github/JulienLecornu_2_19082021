@@ -480,34 +480,38 @@ a:active {
         height: 100%;
     }
 
-
 /* footer */
 
     footer {
+        background-color: #f2f2f2;
+        width: 100%;
+        margin-top: 60px;
         display: flex;
         justify-content: center;
-        width: 100%;
-        background-color: #f2f2f2;
-        margin-top: 60px;
-        Padding : 50px 0px 50px 0px;
     }
 
-    footer .widthSite {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+    .footerContainer {
+        display: flex;      
+        flex-wrap: wrap;
+        width: 93%;
+        max-width: 1340px;
+        padding-bottom: 50px;
     }
+    
 
     #footerColumn {
-        margin-right: 228px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 230px;
     }
 
     #footerColumn h2{
         font-size: 1em;
+        margin-top: 50px;
     }
 
     #footerColumn ul{
-        margin-top: 23px;
+        margin-top: px;
     }
 
     #footerColumn li{
@@ -532,7 +536,7 @@ a:active {
         width:100%;
         }
 
-    header, #section1, #section2, #section3, footer {
+    header, #section1, #section2, #section3, .footerContainer {
         padding: 0 10% 0 10%;
         }
 
@@ -678,7 +682,7 @@ a:active {
             flex-direction: column;
             justify-content: center;
             align-content: center;
-            width: 100%;
+            flex-basis: 100%;
         }
 
         .accommodationAvailable .cards {
@@ -701,6 +705,15 @@ a:active {
 
         .activitiesCards img{
             height: 135px;
+        }
+    
+        .footerContainer {
+            flex-direction: column;
+            padding-bottom: 50px;
+        }
+
+        #footerColumn {
+            margin : 0px;
         }
     }
 
