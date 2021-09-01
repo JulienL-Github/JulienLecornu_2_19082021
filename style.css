@@ -499,22 +499,22 @@ a:active {
     }
     
 
-    #footerColumn {
+    .footerColumn {
         display: flex;
         flex-direction: column;
         margin-right: 230px;
     }
 
-    #footerColumn h2{
+    .footerColumn h2{
         font-size: 1em;
         margin-top: 50px;
     }
 
-    #footerColumn ul{
+    .footerColumn ul{
         margin-top: px;
     }
 
-    #footerColumn li{
+    .footerColumn li{
         margin-top: 15px;
         font-size: 0.9em;
     }
@@ -764,7 +764,7 @@ a:active {
             padding-bottom: 50px;
         }
 
-        #footerColumn {
+        .footerColumn {
             margin : 0px;
         }
 
