@@ -28,7 +28,7 @@ h1 {
 h2 {
     margin: 0px;
     padding: 0px;
-    line-height: 1em;
+    line-height: 1.45em;
 }
 
 p {
@@ -241,7 +241,6 @@ a:active {
 
     .filterButton p{
         padding: 0px 22px 0px 13px;
-        font-size: 1.35em;
         font-weight: 700;
     }
 
