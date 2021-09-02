@@ -14,38 +14,15 @@
 </head>
 
 <body>
-<!-- HEADER WEB -->
-    <header class="web">
-        <div class="webHeader">
-                <div class="logo">
-                    <a href="#top"><img src="images/Reservia.svg" alt="Logo de l'entreprise Reservia"/></a> 
-                </div>
-                <nav class="web">
-                    <ul>
-                        <li><a href="#section2">Hébergements</a></li>
-                        <li><a href="#section3">Activités</a></li>
-                        <li class="subscribeLink"><a href="#">S'inscrire</a></li>
-                    </ul>
-                </nav>
-            </div>
-    </header>
-
-<!-- HEADER MOBILE -->
-    <header class="mobile">
-        <div class="mobileHeader">
-            <div class="logo">
-                <a href="#top"><img src="images/Reservia.svg" alt="Logo de l'entreprise Reservia"/></a> 
-            </div>
-                <ul>
-                    <li class="subscribeLink"><a href="#">S'inscrire</a></li>
-                </ul>
-        </div>
-            <nav class="mobile">
-                <ul>
-                    <li><a href="#accommodationAvailable">Hébergements</a></li>
-                    <li><a href="#section3">Activités</a></li>
-                </ul>
+    <header>
+        <div id="headerContainer">
+            <a id="logo" href="#top"><img src="images/Reservia.svg" alt="Logo de l'entreprise Reservia"/></a>
+            <a id="subscribe" href="#"><h2>S'inscrire</h2></a>
+            <nav>
+                <li><a href="#accommodationAncre">Hébergements</a></li>
+                <li><a href="#section3">Activités</a></li>
             </nav>
+        </div>
     </header>
 
 <div class="siteWidth">
@@ -99,7 +76,7 @@
             </div> 
             <div class="accommodations">
                 <div class="accommodationsBox">
-                    <h2>Hébergements à Marseille</h2>
+                    <h2 id="accommodationAncre">Hébergements à Marseille</h2>
     <!-- Accomodations : Available -->
                     <div id="accommodationAvailable">
                         <a href="#"><div class="cards">
