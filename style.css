@@ -256,7 +256,7 @@ a:active {
         font-size: 1.25em;
     }
 
-    /* showResultNb */
+/* showResultNb */
 
     #showResultNb {
         display: flex;
@@ -279,7 +279,7 @@ a:active {
         margin-left: 12px;
     }
 
-    /* accommodations */
+/* accommodations */
     
         .accommodations {
             display: flex;
@@ -301,7 +301,7 @@ a:active {
             flex: 3;
         }
 
-    /* Cards */
+/* Cards */
 
         .cards {
             display: flex;
@@ -354,7 +354,7 @@ a:active {
             color: #d9d9d9;
         }
 
-    /* Accommodation Available */
+/* Accommodation Available */
     #accommodationAvailable {
         display: flex;
         flex-wrap: wrap;
@@ -366,28 +366,26 @@ a:active {
         margin-top: 12px;
     }
 
-        /* Accommodation Available Cards*/
-
+    /* Accommodation Available Cards*/
         #accommodationAvailable .cards .stars{
             margin-top : 8px;
             margin-bottom: 7px;
         }
     
-        /* Accommodation Available Link "Afficher plus*/ 
-            .accommodationsBox a {
-            color: black;
-            font: 1em;
-            font-weight: 600;
-            text-decoration: none;
+/* Accommodation Available Link "Afficher plus*/ 
+        .accommodationsBox a {
+        color: black;
+        font: 1em;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+        .accommodationsBox a:hover {
+            color: #0065FC;
+            text-decoration:none;
         }
-
-            .accommodationsBox a:hover {
-                color: #0065FC;
-                text-decoration:none;
-            }
     
-    /* Accommodation Popular */
-
+/* Accommodation Popular */
     .accommodationPopular {
         display: flex;
         flex-wrap: wrap;
@@ -444,8 +442,9 @@ a:active {
     .activitiesBox {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         margin-top: 20px;
+        flex-basis: 100%;
+        justify-content: space-between;
     }
 
     .activitiesColumn {
@@ -468,15 +467,15 @@ a:active {
         border-radius: 20px 20px 0 0;
     }
 
-    .activitiesColumn:nth-child(1) img {
+    .activitiesColumn img {
         height: 385px;
     }
 
-    .activitiesColumn:nth-child(2) img {
+    .activitiesColumn:nth-child(2) a:nth-child(1) img {
         height: 180px;
     }
 
-    .activitiesColumn:nth-child(2) .activitiesCards:nth-child(2) img {
+    .activitiesColumn:nth-child(2) a:nth-child(2) img {
         height: 110px;
     }
 
@@ -484,11 +483,11 @@ a:active {
         height: 385px;
     }
 
-    .activitiesColumn:nth-child(4) img {
+    .activitiesColumn:nth-child(4) a:nth-child(1) img {
         height: 140px;
     }
 
-    .activitiesColumn:nth-child(4) .activitiesCards:nth-child(2) img {
+    .activitiesColumn:nth-child(4) a:nth-child(2) img {
         height: 150px;
     }
 
@@ -806,6 +805,9 @@ a:active {
 
         .activitiesColumn a{
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .activitiesCards {
@@ -822,11 +824,11 @@ a:active {
             height: 130px;
         }
     
-        .activitiesColumn:nth-child(2) img {
+        .activitiesColumn:nth-child(2) a:nth-child(1) img {
             height: 130px;
         }
     
-        .activitiesColumn:nth-child(2) .activitiesCards:nth-child(2) img {
+        .activitiesColumn:nth-child(2) a:nth-child(2) img {
             height: 130px;
         }
     
@@ -834,11 +836,11 @@ a:active {
             height: 130px;
         }
     
-        .activitiesColumn:nth-child(4) img {
+        .activitiesColumn:nth-child(4) a:nth-child(1) img {
             height: 130px;
         }
     
-        .activitiesColumn:nth-child(4) .activitiesCards:nth-child(2) img {
+        .activitiesColumn:nth-child(4) a:nth-child(2) img {
             height: 130px;
         }
 
