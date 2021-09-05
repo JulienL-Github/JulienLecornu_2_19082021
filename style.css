@@ -104,6 +104,10 @@ a:active {
         order : 2;
     }
 
+    nav ul {
+        display: flex;
+    }
+
     nav a {
         margin-left: 12px;
         padding : 48px 28px 0px 28px
@@ -140,7 +144,7 @@ a:active {
 
         #searchBar {
             background-color: #f2f2f2;
-            border: solid #f2f2f2 2px;
+            padding : 2px;
             border-radius: 20px;
             display:flex;
             align-items: center;
@@ -204,7 +208,7 @@ a:active {
     /* Filter */
     #section2 {
         margin-top:17px;
-        width: 93%;
+        width: calc(100% - 100px);
         max-width: 1340px;
 }
 
@@ -638,6 +642,10 @@ a:active {
         justify-content: space-around;
         margin-top: 30px;
         order : 2;
+        width: 100%;
+    }
+
+    nav ul {
         width: 100%;
     }
 
