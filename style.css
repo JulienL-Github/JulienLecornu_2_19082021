@@ -1,13 +1,5 @@
 /* WEB CSS of RESERVIA Page */
 
-    .web {
-        display : block;
-    }
-
-    .mobile {
-        display: none;
-    }
-
 body {
     margin: 0;
     display: flex;
@@ -65,12 +57,6 @@ a:active {
     color: #0065FC;
 }
 
-
-/*Where we define the width of the website*/
-.siteWidth {
-    width: 93%;
-    max-width: 1340px;
-}
 
 /*HEADER*/
 
@@ -131,19 +117,28 @@ a:active {
 
     #section1 {
         display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #section1Container {
+        display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        width: calc(100% - 100px);
+        max-width: 1340px;
     }
 
     #section1 p {
         margin-top: 8px ;
     }
     
-    .searchBarContainer {
+    #searchBarContainer {
         display: flex;
         margin-top: 20px ;
     }
 
-        .searchBar {
+        #searchBar {
             background-color: #f2f2f2;
             border: solid #f2f2f2 2px;
             border-radius: 20px;
@@ -151,7 +146,7 @@ a:active {
             align-items: center;
         }
 
-        .searchBar i {
+        #searchBar i {
             width: 52px;
             height: 100%;
             display: flex;
@@ -159,7 +154,7 @@ a:active {
             align-items: center;
         }
 
-        input{
+        #searchBar input{
             height: 50px;
             width: 234px;
             font-size: 1em;
@@ -170,36 +165,38 @@ a:active {
             border-left: none;
         }
 
-        input::placeholder {
+        #searchBar input::placeholder {
             font-size : medium;
             font-weight: 400;
         }
 
-        input:focus {
+        #searchBar input:focus {
             outline: none;
         }
 
 
-        .searchBar button {
+        #searchBar button {
             width: 136px;
             height: 100%;
             background-color: #0065FC;
             color: white;
-            font-weight: 800;
+            font-weight: 700;
             font-size: 1em;
             border: none;
             border-radius: 0 20px 20px 0;
+            transition-duration: 0.1s;
         }
 
-            span.mobile {
+        button span.mobile {
                 display:none
             }
-            span.web {
+        button span.web {
                 display:inline-block
             }
 
-        .searchBar button:hover{
+        #searchBar button:hover{
             cursor:pointer;
+            font-size: 1.1em;
         }
 
 /*-- Section 2 Results */
@@ -211,7 +208,7 @@ a:active {
         max-width: 1340px;
 }
 
-    .filter {
+    #filter {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -250,20 +247,20 @@ a:active {
         font-weight: 700;
     }
 
-    .filter h2 {
+    #filter h2 {
         margin-right: 19px;
         font-size: 1.25em;
     }
 
     /* showResultNb */
 
-    .showResultNb {
+    #showResultNb {
         display: flex;
         align-items:center;
         margin-top : 17px;
     }
 
-    .showResultNb i{
+    #showResultNb i{
         display: flex;
         justify-content: center;
         align-items:center;
@@ -274,7 +271,7 @@ a:active {
         color: #0065FC;
     }
 
-    .showResultNb p{
+    #showResultNb p{
         margin-left: 12px;
     }
 
@@ -309,7 +306,7 @@ a:active {
             width: 235px;
             background-color: white;
             border-radius: 25px;
-            border: solid white 5px;
+            padding : 5px;
             box-shadow: 0px 5px 10px rgb(187, 186, 186);
             margin-top: 15px;
             margin-bottom: 15px;
@@ -436,6 +433,8 @@ a:active {
 
     #section3 {
         margin-top: 61px;
+        width: 93%;
+        max-width: 1340px;
     }
 
     .activitiesBox {
@@ -446,42 +445,52 @@ a:active {
     }
 
     .activitiesColumn {
+        width: 300px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;      
+        justify-content: space-between;
     }
 
     .activitiesCards {
-        width: 302px;
+        width: 300px;
         box-shadow: 0px 5px 10px rgb(187, 186, 186);
-        border-radius: 20px 20px 20px 20px;
-        display: flex;
-        flex-direction: column;
-        height: 450px;
-        margin: 10px;
+        border-radius: 20px;
+        background-color: #ffff;
     }
 
-    .activitiesColumn:nth-child(2) .activitiesCards:nth-child(1) {
-        height: 236px;
-    }
-
-    .activitiesColumn:nth-child(2) .activitiesCards:nth-child(2) {
-        height: 165px;
-    }
-
-    .activitiesColumn:nth-child(4) .activitiesCards {
-        height: 195px;
-    }
-
-    .activitiesCards h2{
-        margin: 23px 20px 20px 20px;
-        font-size: 1em;
-    }
-
-    .activitiesCards img{
-        border-radius: 20px 20px 0 0;
+    .activitiesCards img {
         object-fit: cover;
-        height: 100%;
+        width: 300px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .activitiesColumn:nth-child(1) img {
+        height: 385px;
+    }
+
+    .activitiesColumn:nth-child(2) img {
+        height: 180px;
+    }
+
+    .activitiesColumn:nth-child(2) .activitiesCards:nth-child(2) img {
+        height: 110px;
+    }
+
+    .activitiesColumn:nth-child(3) img {
+        height: 385px;
+    }
+
+    .activitiesColumn:nth-child(4) img {
+        height: 140px;
+    }
+
+    .activitiesColumn:nth-child(4) .activitiesCards:nth-child(2) img {
+        height: 150px;
+    }
+
+    .activitiesCards h2 {
+        font-size: 1em;
+        padding: 20px;
     }
 
 /* footer */
@@ -537,25 +546,40 @@ a:active {
         margin-top: 50px;
     }
 
-    #accommodationAvailable .cards {
-        margin-left: 30px;
-        margin-right: 30px;
+    #accommodationAvailable {
+        justify-content: start;
     }
 
-    .activitiesColumn {
-        width: 25%;
-    }
-    .activitiesCards {
-        width: auto;
+    #accommodationAvailable .cards {
+        margin-right: 25px;
     }
 
     .accommodationPopular {
-        justify-content: center;
+        justify-content: start;
     }
 
     .accommodationPopular .cards{
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-right: 25px;
+    }
+
+    .activitiesBox {
+        justify-content: start;
+    }
+
+    .activitiesColumn {
+        margin-right: 25px;
+    }
+
+    .activitiesCards {
+        margin-bottom: 25px;
+    }
+
+    .footerContainer {
+        justify-content: space-between;
+    }
+
+    .footerColumn {
+        margin : 0px;
     }
 }
 
@@ -563,24 +587,11 @@ a:active {
 
 @media screen and (max-width: 723px) {
 
-    .web {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
-
-    .siteWidth {
-        width:100%;
-    }
-
-    header, #section1, #section3, .footerContainer, .filter, .showResultNb {
-        padding: 0 10% 0 10%;
-        }
-
     #section2 {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #section3 {
@@ -647,6 +658,8 @@ a:active {
         border-bottom : solid #0065FC 3px;
     }
 
+/*SECTION 1 */
+
     #section1 {
         margin-top: 45px;
     }
@@ -655,7 +668,7 @@ a:active {
         margin-top: 16px;
     }
 
-    .locationIcon i{
+    #locationIcon i{
         width: 49px;
         height: 49px;
         display: flex;
@@ -663,43 +676,47 @@ a:active {
         align-items: center;
     }
 
-    .searchBar {
+    #searchBar {
         justify-content: center;
     }
 
-    .searchBar form {
+    #searchBar form {
         width: 230px;
     }
 
-    .searchBar button {
+    #searchBar button {
         width: 51px;
         height: 51px;
         border-radius: 15px;
     }
-        span.web {
-            display:none;
-        }
-        span.mobile {
-            display:flex;
-            justify-content: center;
-            align-items: center;
-        }
+
+    button span.mobile {
+        display:flex;
+    }
+    
+    button span.web {
+        display:none;
+    }
 
 
         /* RESULT */
-        
-        .filter h2 {
+
+        #filter {
+            width: calc(100% - 100px);
+        }
+
+        #filter h2 {
             width: 100%;
             margin-bottom: 12px;
             font-size: 1.1em;
         }
 
-        .filter p {
+        #filter p {
             font-size: .93em;
         }
 
-        .showResultNb {
-            align-items: baseline;
+        #showResultNb {
+            width: calc(100% - 100px);
         }
 
         .accommodations {
@@ -710,12 +727,19 @@ a:active {
         }
 
         .accommodationsBox {
+            width: calc(100% - 100px);
             display : flex;
             flex-direction: column;
             justify-content: center;
             border-radius: 0px;
             background-color: #f2f2f2;
-            padding: 42px 10% 46px 10%;
+            padding: 42px 50px 46px 50px;
+        }
+
+        .accommodationsBox a {
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
 
         .accommodationsBox:nth-of-type(1){
@@ -724,8 +748,9 @@ a:active {
         }
 
         .accommodationPopular {
-            display: block;
+            display: flex;
             justify-content: center;
+            width: 100%;
         }
 
         .accommodationPopularTitle {
@@ -734,6 +759,7 @@ a:active {
 
         .accommodationPopular .cards {
             width: 100%;
+            max-width: 500px;
             margin-left: 0px;
             margin-right: 0px;
         }
@@ -755,33 +781,68 @@ a:active {
             align-content: center;
             flex-basis: 100%;
         }
-
-        .activitiesBox {
+    
+        #section3 {
+            width: calc(100% - 100px);
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            margin-top: 20px;
         }
 
         .activitiesColumn {
+            width: 100%;
+            margin-right: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .activitiesColumn a{
             width: 100%;
         }
 
         .activitiesCards {
             width: 100%;
-            height: 100%;
-            margin-top: 24px;
-            margin-left: 0px;
-            margin-right: 0px;
+            max-width: 500px;
+            margin-bottom: 24px;
+        }
+            
+        .activitiesColumn img {
+            width: 100%;
         }
 
-        .activitiesCards img{
-            height: 135px;
+        .activitiesColumn:nth-child(1) img {
+            height: 130px;
         }
     
+        .activitiesColumn:nth-child(2) img {
+            height: 130px;
+        }
+    
+        .activitiesColumn:nth-child(2) .activitiesCards:nth-child(2) img {
+            height: 130px;
+        }
+    
+        .activitiesColumn:nth-child(3) img {
+            height: 130px;
+        }
+    
+        .activitiesColumn:nth-child(4) img {
+            height: 130px;
+        }
+    
+        .activitiesColumn:nth-child(4) .activitiesCards:nth-child(2) img {
+            height: 130px;
+        }
+
+
+        footer {
+            margin-top: 24px;
+
+        }   
+        
         .footerContainer {
             flex-direction: column;
+            width: calc(100% - 100px);
             padding-bottom: 50px;
         }
 
@@ -796,6 +857,7 @@ a:active {
         #accommodationAvailable .cards{
             width: 100%;
             margin-left: 0px;
-            margin-right: 0px;   
+            margin-right: 0px;
+            max-width: 500px; 
         }
     }
