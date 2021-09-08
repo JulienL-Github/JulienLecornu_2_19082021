@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8"  />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reservia - Votre hébergement pour des vacances de rêve</title>
     <link rel="stylesheet" href="style.css">
     
@@ -33,20 +34,19 @@
         <div id="section1Container">
             <h1>Trouvez votre hébergement pour des vacances de rêves </h1>
             <p>En plein centre-ville ou en pleine nature</p>
-            <!-- Search Bar -->
-            <div id="searchBarContainer">        
-                <div id="searchBar">
-                    <div id="locationIcon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <form action="#" method="post">
-                        <input type="text" placeholder="Tapez le nom d'une ville" autofocus/>
-                    </form>
-                    <button type="submit">
-                            <span class="web">Rechercher</span>
-                            <span class="mobile"><i class="fas fa-search"></i></span>
-                    </button>
+            <!-- Search Bar -->      
+            <div id="searchBar">
+                <div id="locationIcon">
+                    <i class="fas fa-map-marker-alt"></i>
                 </div>
+                <form action="#" method="post">
+                    <span class="web"><input type="text" placeholder="Tapez le nom d'une ville" autofocus/></span>
+                    <span class="mobile"><input type="text" placeholder="Tapez une ville" autofocus/></span>
+                </form>
+                <button type="submit">
+                    <span class="web">Rechercher</span>
+                    <span class="mobile"><i class="fas fa-search"></i></span>
+                </button>
             </div>
         </div>
     </section>
